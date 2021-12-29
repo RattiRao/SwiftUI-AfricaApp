@@ -113,7 +113,7 @@
 		54C77652277B703700A25068 = {
 			isa = PBXGroup;
 			children = (
-				54C7765D277B703800A25068 /* SwiftUI-AfricaAppApp */,
+				54C7765D277B703800A25068 /* SwiftUI-AfricaApp */,
 				54C7765C277B703800A25068 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54C7765D277B703800A25068 /* SwiftUI-AfricaAppApp */ = {
+		54C7765D277B703800A25068 /* SwiftUI-AfricaApp */ = {
 			isa = PBXGroup;
 			children = (
 				5456180A277CAE4A00FD1D4E /* Data */,
@@ -136,7 +136,7 @@
 				54C77662277B703B00A25068 /* Assets.xcassets */,
 				54C77664277B703B00A25068 /* Preview Content */,
 			);
-			path = "SwiftUI-AfricaAppApp";
+			path = "SwiftUI-AfricaApp";
 			sourceTree = "<group>";
 		};
 		54C77664277B703B00A25068 /* Preview Content */ = {
