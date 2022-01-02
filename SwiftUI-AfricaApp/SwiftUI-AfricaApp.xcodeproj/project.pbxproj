@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54546FD22781EAE7004FDF69 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54546FD12781EAE7004FDF69 /* AnimalListItemView.swift */; };
+		54546FD42781EB7A004FDF69 /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54546FD32781EB7A004FDF69 /* AnimalsModel.swift */; };
 		5456181A277CAE4F00FD1D4E /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5456180B277CAE4A00FD1D4E /* locations.json */; };
 		5456181B277CAE4F00FD1D4E /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5456180C277CAE4A00FD1D4E /* covers.json */; };
 		5456181C277CAE4F00FD1D4E /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 5456180D277CAE4A00FD1D4E /* animals.json */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54546FD12781EAE7004FDF69 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		54546FD32781EB7A004FDF69 /* AnimalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
 		54561808277CABFA00FD1D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5456180B277CAE4A00FD1D4E /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		5456180C277CAE4A00FD1D4E /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				54D1D234277DEDAB00CE0E7A /* CoverImageView.swift */,
+				54546FD12781EAE7004FDF69 /* AnimalListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				54D1D23B277DEF5100CE0E7A /* CoverImageModel.swift */,
+				54546FD32781EB7A004FDF69 /* AnimalsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,11 +274,13 @@
 				54C77661277B703800A25068 /* ContentView.swift in Sources */,
 				5456182F277CAF4200FD1D4E /* MainView.swift in Sources */,
 				54D1D235277DEDAB00CE0E7A /* CoverImageView.swift in Sources */,
+				54546FD22781EAE7004FDF69 /* AnimalListItemView.swift in Sources */,
 				54D1D23C277DEF5100CE0E7A /* CoverImageModel.swift in Sources */,
 				5456182B277CAF1D00FD1D4E /* MapView.swift in Sources */,
 				54C7765F277B703800A25068 /* SwiftUI_AfricaApp.swift in Sources */,
 				54561829277CAF0800FD1D4E /* VideoListView.swift in Sources */,
 				5456182D277CAF3300FD1D4E /* GalleryView.swift in Sources */,
+				54546FD42781EB7A004FDF69 /* AnimalsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +419,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +449,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

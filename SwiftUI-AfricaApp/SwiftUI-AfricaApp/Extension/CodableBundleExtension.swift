@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle{
-    func decode(_ fileName: String) -> Array<CoverImageModel>{
+    func decode<T: Codable>(_ fileName: String) -> T{
         //Get file
         guard let fileUrl = self.url(forResource: fileName, withExtension: nil) else{
             fatalError("Failed to find url for \(fileName)")
@@ -18,10 +18,10 @@ extension Bundle{
             fatalError("Failed to retrieve data from \(fileName)")
         }
         //Decode
-        guard let arrCoverImage = try? JSONDecoder.init().decode([CoverImageModel].self, from: data) else{
+        guard let arrResult = try? JSONDecoder.init().decode(T.self, from: data) else{
             fatalError("Decoding error from \(fileName)")
         }
         //Return
-        return arrCoverImage
+        return arrResult
     }
 }
