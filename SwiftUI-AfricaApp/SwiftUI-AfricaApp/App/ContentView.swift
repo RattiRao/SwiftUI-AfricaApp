@@ -17,7 +17,7 @@ struct ContentView: View {
                     .listRowInsets(EdgeInsets.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                 ForEach(arrAnimals){ item in
                     NavigationLink{
-                        
+                        AnimalDetailView(animal: item)
                     } label: {
                         AnimalListItemView(model: item)
                     }//: Navigation Link
