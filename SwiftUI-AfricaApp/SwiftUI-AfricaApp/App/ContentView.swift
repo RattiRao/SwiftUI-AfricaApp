@@ -23,6 +23,7 @@ struct ContentView: View {
                     }//: Navigation Link
                 }//: ForEach
             }//: LIST
+            .listStyle(.plain)
             .navigationBarTitle("Africa", displayMode: .large)
         }
     }
