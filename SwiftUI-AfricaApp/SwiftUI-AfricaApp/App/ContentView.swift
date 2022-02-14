@@ -11,7 +11,25 @@ struct ContentView: View {
     let arrAnimals: [AnimalsModel] = Bundle.main.decode("animals.json")
     let haptic = UIImpactFeedbackGenerator(style: .medium)
     @State private var isGridActive: Bool = false
-    @State var arrGridItem: [GridItem] = Array.init(repeating: GridItem(.flexible()), count: 2)
+    @State private var toolBarIcon: String = "square.grid.2x2"
+    
+    @State var arrGridItem: [GridItem] = [GridItem(.flexible())]
+    
+    func switchGrid() {
+        arrGridItem = Array(repeating: GridItem(.flexible()), count: arrGridItem.count%3 + 1)
+        
+        switch arrGridItem.count{
+        case 1:
+            toolBarIcon = "square.grid.2x2"
+        case 2:
+            toolBarIcon = "square.grid.2x2"
+        case 3:
+            toolBarIcon = "rectangle.grid.1x2"
+            
+        default:
+            toolBarIcon = "square.grid.2x2"
+        }
+    }
     
     var body: some View {
         NavigationView{
@@ -57,8 +75,9 @@ struct ContentView: View {
                         Button.init {
                             isGridActive = true
                             haptic.impactOccurred()
+                            switchGrid()
                         } label: {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolBarIcon)
                                 .font(.title2)
                                 .foregroundColor(isGridActive ? .accentColor : .primary)
                         }
